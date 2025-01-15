@@ -1,5 +1,6 @@
 import { FloatButtonStyled } from "./FloatButtonStyled";
 import imgWhatsappIcon from "../../assets/social.png";
+import { ImageStyled } from "../Image/ImageStyled";
 
 interface FloatButtonProps {
   link: string;
@@ -9,7 +10,11 @@ interface FloatButtonProps {
 export function FloatButton(props: FloatButtonProps) {
   return (
     <FloatButtonStyled href={props.link} title={props.title} target="_blank">
-      <img src={imgWhatsappIcon} alt="Icone Whatsapp" />
+      <ImageStyled
+        src={imgWhatsappIcon}
+        alt="Icone Whatsapp"
+        $customWidth="60px"
+      />
     </FloatButtonStyled>
   );
 }

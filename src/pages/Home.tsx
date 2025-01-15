@@ -19,7 +19,11 @@ export function Home() {
 
       <main>
         <SectionStyled $direction="row" $reverse $gap={24}>
-          <ImageStyled src={imgHome} alt="Buscar viagens pelo mundo" />
+          <ImageStyled
+            src={imgHome}
+            alt="Buscar viagens pelo mundo"
+            $customWidth="40%"
+          />
 
           <div>
             <TitleStyled $textAlign="center">GrowTravel</TitleStyled>
@@ -36,7 +40,7 @@ export function Home() {
           $gap={48}
           $maxContainerWidth={50}
         >
-          <ImageStyled src={imgQuemSomos} alt="Aeroporto" />
+          <ImageStyled src={imgQuemSomos} alt="Aeroporto" $customWidth="40%" />
 
           <div>
             <TitleStyled $textAlign="left">Quem somos</TitleStyled>
